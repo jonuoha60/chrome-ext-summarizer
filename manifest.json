@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "AI Summarizer",
+  "description": "Monitor and analyze your interactions and activity across the web apps you use in real-time.",
+ "icons": {
+  "32": "icon-32.png"
+},
+  "version": "1.0.0",
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+
+  "options_page": "options.html",
+
+  "action": { 
+    "default_popup": "popup.html",
+    "default_icon": "icon-32.png"
+  },
+  "permissions": ["scripting", "activeTab", "storage"],
+  
+  "host_permissions": ["<all_urls>"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
