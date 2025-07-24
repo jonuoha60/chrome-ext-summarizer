@@ -7,7 +7,7 @@ const summarizeBtn = document.getElementById("summarize");
 const copyBtn = document.getElementById("copy-btn");
 const playBtn = document.getElementById("play-audio");
 
-let apiKey = `AIzaSyCBrhm6V5upFjzo88H6GdfD9paGjE08kWo`
+let googleApiKey = ``
 let currentSummary = "";
 
 // Populate the language dropdown
@@ -24,7 +24,7 @@ translateSelect.addEventListener("change", async () => {
   const lang = translateSelect.value.split('-')[0]; 
 
   try {
-const res = await fetch(`https://translation.googleapis.com/language/translate/v2?key=${apiKey}`, {
+const res = await fetch(`https://translation.googleapis.com/language/translate/v2?key=${googleApiKey}`, {
   method: "POST",
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify({
