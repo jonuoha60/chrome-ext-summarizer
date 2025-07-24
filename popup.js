@@ -7,7 +7,7 @@ const summarizeBtn = document.getElementById("summarize");
 const copyBtn = document.getElementById("copy-btn");
 const playBtn = document.getElementById("play-audio");
 
-let googleApiKey = ``
+let googleApiKey = `your google api key`
 let currentSummary = "";
 
 // Populate the language dropdown
