@@ -1,4 +1,5 @@
 # AI Summarizer Chrome Extension
+<img width="1361" height="730" alt="Screenshot 2025-08-15 032533" src="https://github.com/user-attachments/assets/95acf6c6-b379-4dfc-a3e4-0c1f0de0f44a" />
 
 This Chrome extension makes high school, college, and university work easier by instantly summarizing any blog, magazine, or news article into detailed, brief, or bullet-point summaries. It also features text-to-speech for hands-free listening. The extension leverages the Gemini API for smart summarization and the Google Translator API for seamless multilingual support.
 
